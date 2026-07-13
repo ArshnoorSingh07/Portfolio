@@ -1,8 +1,21 @@
 import "../styles/contact.css";
+
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { IoSend } from "react-icons/io5";
+
 import { toast } from "react-toastify";
+
+import {
+  FaGithub,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+} from "react-icons/fa";
+
+import { MdEmail } from "react-icons/md";
+import { SiLeetcode } from "react-icons/si";
+import { IoSend } from "react-icons/io5";
+import { HiArrowDownTray } from "react-icons/hi2";
 
 const Contact = () => {
 
@@ -47,66 +60,151 @@ const Contact = () => {
   };
 
   return (
+
     <section className="contact-section" id="contactme">
 
       <div className="container">
 
-        <h1 className="contact-heading">
-          Contact Me
-        </h1>
+        <div className="contact-title">
 
-        <h3 className="contact-subheading">
-          Questions, thoughts, or just want to say hello?
-        </h3>
+          <h1>Let's Work Together 🚀</h1>
 
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="contact-form"
-        >
+          <p>
+            Have a project in mind, an opportunity, or just want to say hello?
+            Feel free to reach out.
+          </p>
 
-          <input
-            type="text"
-            name="user_name"
-            placeholder="Enter your name"
-            required
-          />
+        </div>
 
-          <input
-            type="email"
-            name="user_email"
-            placeholder="Enter your email"
-            required
-          />
+        <div className="contact-wrapper">
 
-          <input
-            type="text"
-            name="subject"
-            placeholder="Enter your subject"
-            required
-          />
+          {/* LEFT CARD */}
 
-          <textarea
-            rows="8"
-            name="message"
-            placeholder="Enter your message"
-            required
-          ></textarea>
+          <div className="contact-info">
 
-          <button
-            type="submit"
-            className="btn-pink contact-btn"
+            <div className="availability">
+
+              <span className="status-dot"></span>
+
+              Open to Opportunities
+
+            </div>
+
+            <div className="info-box">
+
+              <FaMapMarkerAlt className="info-icon" />
+
+              <div>
+
+                <h4>Location</h4>
+
+                <p>Patiala, Punjab, India</p>
+
+              </div>
+
+            </div>
+
+            <div className="info-box">
+
+              <MdEmail className="info-icon" />
+
+              <div>
+
+                <h4>Email</h4>
+
+                <p>arshnoorsingh.05@gmail.com</p>
+
+              </div>
+
+            </div>
+
+            <div className="social-links">
+
+              <a
+                href="https://github.com/ArshnoorSingh07"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/arshnoor-singh-785b5a2aa/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+
+              <a
+                href="https://leetcode.com/u/weEf2py0fV/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SiLeetcode />
+              </a>
+
+            </div>
+
+          </div>
+
+          {/* FORM */}
+
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="contact-form"
           >
-            Send Message
-            <IoSend />
-          </button>
 
-        </form>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Your Name"
+              required
+            />
+
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Your Email"
+              required
+            />
+
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+
+            <button
+              type="submit"
+              className="btn-pink contact-btn"
+            >
+
+              Send Message
+
+              <IoSend />
+
+            </button>
+
+          </form>
+
+        </div>
 
       </div>
 
     </section>
+
   );
+
 };
 
 export default Contact;
