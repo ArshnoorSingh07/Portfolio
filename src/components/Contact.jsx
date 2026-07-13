@@ -129,7 +129,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/arshnoor-singh-785b5a2aa/"
+                href="https://www.linkedin.com/in/arshnoor-singh1/"
                 target="_blank"
                 rel="noreferrer"
               >
