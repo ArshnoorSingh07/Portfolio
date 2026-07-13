@@ -1,0 +1,233 @@
+.footer{
+
+    position:relative;
+
+    background:#1f2235;
+
+    padding:5rem 0 2rem;
+
+    overflow:hidden;
+}
+
+/* Background Text */
+
+.footer-faded-text{
+
+    position:absolute;
+
+    left:-40px;
+
+    bottom:-20px;
+
+    font-size:8rem;
+
+    font-weight:700;
+
+    color:rgba(255,255,255,.05);
+
+    user-select:none;
+}
+
+/* Main */
+
+.footer-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:3rem;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* Left */
+
+.footer-left{
+
+    width:35%;
+}
+
+.footer-logo{
+
+    color:white;
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+}
+
+.footer-desc{
+
+    color:#c7c7c7;
+
+    line-height:1.8;
+
+    font-size:15px;
+}
+
+/* Center */
+
+.footer-center{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-top:10px;
+}
+
+.footer-center a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:17px;
+}
+
+.footer-center a:hover{
+
+    color:var(--bgOrange);
+
+    padding-left:8px;
+}
+
+/* Right */
+
+.footer-right{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:5px;
+}
+
+.footer-right a{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:#2d3150;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:20px;
+
+    transition:.35s;
+}
+
+.footer-right a:hover{
+
+    background:var(--bgOrange);
+
+    transform:translateY(-5px);
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+    margin-top:4rem;
+
+    padding-top:2rem;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    text-align:center;
+
+    color:#bbb;
+
+    font-size:14px;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.footer-wrapper{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+.footer-left{
+
+    width:100%;
+}
+
+.footer-center{
+
+    flex-direction:row;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+}
+
+.footer-right{
+
+    justify-content:center;
+}
+
+.footer-faded-text{
+
+    font-size:5rem;
+}
+
+}
+
+@media(max-width:600px){
+
+.footer{
+
+    padding:4rem 0 2rem;
+}
+
+.footer-logo{
+
+    font-size:1.6rem;
+}
+
+
+.footer-center{
+
+    gap:15px;
+}
+
+.footer-right{
+
+    gap:15px;
+}
+
+.footer-right a{
+
+    width:42px;
+
+    height:42px;
+
+    font-size:18px;
+}
+
+}

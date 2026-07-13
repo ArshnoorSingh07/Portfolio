@@ -1,0 +1,561 @@
+.project-section{
+    background-color:rgb(231,231,231);
+    margin-top:4rem;
+    padding-bottom:5rem;
+}
+
+.page-header{
+    color:var(--bgOrange);
+    font-size:90px;
+    text-align:center;
+    padding-top:30px;
+}
+
+.project-container{
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:120px;
+}
+
+/* ========================= */
+/* Project Card */
+/* ========================= */
+
+.project-card{
+
+    width:90%;
+    height:550px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    border-radius:15px;
+
+    box-shadow:0 0 40px rgba(0,0,0,0.25);
+
+    transition:0.4s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.project-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(31,31,31,.58);
+
+    z-index:0;
+
+}
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        45deg,
+        #343d68,
+        #343d68be,
+        #343d6870
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.45s;
+
+    z-index:1;
+
+}
+
+.project-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+/* ========================= */
+/* Project Number */
+/* ========================= */
+
+.project-number{
+
+    position:absolute;
+
+    font-size:180px;
+
+    font-weight:700;
+
+    color:white;
+
+    opacity:0;
+
+    transition:.4s;
+
+    z-index:10;
+
+    pointer-events:none;
+
+}
+
+.project-card:hover .project-number{
+
+    opacity:1;
+
+}
+
+.project-number-right{
+
+    right:15px;
+
+    top:-25px;
+
+}
+
+.project-number-left{
+
+    left:15px;
+
+    top:-25px;
+
+}
+
+/* ========================= */
+/* Content */
+/* ========================= */
+
+.project-content{
+
+    position:absolute;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+    color:white;
+
+    padding:2rem;
+
+    bottom:18%;
+
+    z-index:5;
+
+    transition:.4s ease;
+
+}
+
+.project-content-left{
+
+    left:8%;
+
+}
+
+.project-content-right{
+
+    right:8%;
+
+}
+
+.project-card:hover .project-content{
+
+    transform:translateY(-8px);
+
+}
+
+/* ========================= */
+/* Project Skills */
+/* ========================= */
+
+.project-skills-container{
+    width:60%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.project-skill{
+    width:40px;
+    transition:0.35s;
+}
+
+.project-skill:hover{
+    transform:scale(1.15);
+}
+
+/* ========================= */
+/* Heading */
+/* ========================= */
+
+.project-heading{
+    font-size:50px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.project-subHeading{
+    width:70%;
+    font-size:16px;
+    font-style:italic;
+    line-height:1.6;
+    color:#f5f5f5;
+}
+
+/* ========================= */
+/* Buttons */
+/* ========================= */
+
+.btn-grp{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.btn-project{
+    border:none;
+    outline:none;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.btn-project:hover{
+    border:none;
+}
+
+.btn-project:focus{
+    outline:none;
+}
+
+.icon{
+    cursor:pointer;
+    color:white;
+    font-size:34px;
+    transition:.3s ease;
+}
+
+.icon:hover{
+    color:var(--bgOrange);
+    transform:translateY(-3px) scale(1.08);
+}
+
+/* ========================= */
+/* Background Images */
+/* ========================= */
+
+#project1{
+    background-image:url("../assets/images/projects/Project1.png");
+}
+
+#project2{
+    margin-left:120px;
+    background-image:url("../assets/images/projects/Project2.png");
+}
+
+#project3{
+    background-image:url("../assets/images/projects/Project3.png");
+}
+
+#project4{
+    margin-left:120px;
+    background-image:url("../assets/images/projects/Project4.png");
+}
+
+/* ========================= */
+/* Laptop */
+/* ========================= */
+
+@media (max-width:1200px){
+
+    .page-header{
+        font-size:70px;
+    }
+
+    .project-container{
+        width:100%;
+        padding:0 20px;
+        gap:80px;
+    }
+
+    .project-card{
+        width:100%;
+        height:460px;
+        margin-left:0 !important;
+    }
+
+    .project-number{
+        font-size:140px;
+    }
+
+    .project-number-left{
+        left:15px;
+        top:-20px;
+    }
+
+    .project-number-right{
+        right:15px;
+        top:-20px;
+    }
+
+    .project-content{
+        bottom:12%;
+        padding:1.8rem;
+    }
+
+    .project-content-left{
+        left:6%;
+    }
+
+    .project-content-right{
+        right:6%;
+    }
+
+    .project-heading{
+        font-size:40px;
+    }
+
+    .project-subHeading{
+        width:90%;
+        font-size:15px;
+    }
+
+    .project-skills-container{
+        width:90%;
+    }
+
+    .project-skill{
+        width:34px;
+    }
+
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width:992px){
+
+    .page-header{
+        font-size:56px;
+    }
+
+    .project-container{
+        gap:60px;
+        padding:0 18px;
+    }
+
+    .project-card{
+        width:100%;
+        height:380px;
+        margin-left:0 !important;
+    }
+
+    .project-number{
+        font-size:110px;
+        opacity:1;
+    }
+
+    .project-number-left{
+        left:12px;
+        top:8px;
+    }
+
+    .project-number-right{
+        right:12px;
+        top:8px;
+    }
+
+    .project-content{
+        left:25px !important;
+        right:25px !important;
+        bottom:25px;
+        padding:1.5rem;
+    }
+
+    .project-heading{
+        font-size:32px;
+    }
+
+    .project-subHeading{
+        width:100%;
+        font-size:14px;
+    }
+
+    .project-skills-container{
+        width:100%;
+    }
+
+    .project-skill{
+        width:30px;
+    }
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .page-header{
+        font-size:42px;
+    }
+
+    .project-container{
+        gap:30px;
+        padding:0 15px;
+    }
+
+    .project-card{
+
+        width:100%;
+
+        height:320px;
+
+        margin-left:0 !important;
+
+        border-radius:12px;
+
+        background-position:center;
+
+    }
+
+    .project-content{
+
+        position:absolute;
+
+        left:20px !important;
+
+        right:20px !important;
+
+        bottom:20px;
+
+        padding:0;
+
+    }
+
+    .project-heading{
+
+        font-size:28px;
+
+    }
+
+    .project-subHeading{
+
+        width:100%;
+
+        font-size:14px;
+
+        line-height:1.5;
+
+    }
+
+    .project-skills-container{
+
+        width:100%;
+
+        gap:6px;
+
+    }
+
+    .project-skill{
+
+        width:24px;
+
+    }
+
+    .btn-grp{
+
+        gap:10px;
+
+    }
+
+    .btn-pink{
+
+        padding:0.6rem 1.2rem;
+
+        font-size:15px;
+
+    }
+
+    .icon{
+
+        font-size:24px;
+
+    }
+
+    .project-number{
+
+        display:none;
+
+    }
+
+}
+
+/* ========================= */
+/* Small Mobile */
+/* ========================= */
+
+@media (max-width:480px){
+
+    .page-header{
+        font-size:34px;
+    }
+
+    .project-container{
+        padding:0 10px;
+    }
+
+    .project-card{
+        min-height:360px;
+    }
+
+    .project-content{
+        padding:1rem;
+    }
+
+    .project-heading{
+        font-size:22px;
+    }
+
+    .project-subHeading{
+        font-size:13px;
+    }
+
+    .project-skill{
+        width:24px;
+    }
+
+    .btn-pink{
+        padding:0.6rem 1.2rem;
+        font-size:14px;
+    }
+
+    .icon{
+        font-size:22px;
+    }
+
+}

@@ -1,0 +1,151 @@
+.skills-container{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:4rem 3rem;
+    margin:8rem auto;
+    gap:5rem;
+}
+
+.skill-container-left{
+    width:48%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.skill-container-right{
+    width:52%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:1.8rem;
+    position:relative;
+}
+
+.skill-fade-text{
+    position:absolute;
+    font-size:13rem;
+    font-weight:700;
+    color:#e7e7e7;
+    right:-9%;
+    bottom:-33.2%;
+    user-select:none;
+}
+
+.blob-style{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-5;
+    transform:translate(-50%,-50%);
+    animation:blobAnimate 3s linear infinite;
+}
+
+@keyframes blobAnimate{
+
+    50%{
+        top:54%;
+        left:46%;
+    }
+
+}
+
+.skills-logo{
+    width:90px;
+    transition:0.5s;
+}
+
+.skills-logo:hover{
+    transform:scale(1.2);
+}
+
+.skill-heading{
+    font-size:3.3rem;
+    line-height:1.15;
+    color:var(--bgOrange);
+    margin-bottom:1rem;
+}
+
+.caps{
+    font-size:5.5rem;
+}
+
+.skill-subHeading{
+    width:100%;
+    text-align:justify;
+}
+
+.skill-subHeading p{
+    margin:18px 0;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Responsive */
+
+@media (max-width:1200px){
+
+    .skills-container{
+        flex-direction:column;
+        padding:2rem;
+    }
+
+    .skill-container-left,
+    .skill-container-right{
+        width:100%;
+    }
+
+    .skill-container-right{
+        margin-top:2rem;
+    }
+
+    .skill-fade-text{
+        display:none;
+    }
+}
+
+@media (max-width:768px){
+
+    .skills-logo{
+        width:65px;
+    }
+
+    .blob-style{
+        width:260px;
+    }
+
+    .skill-heading{
+        font-size:40px;
+        line-height:45px;
+    }
+
+    .caps{
+        font-size:70px;
+    }
+}
+
+@media (max-width:480px){
+
+    .skills-container{
+        padding:1rem;
+    }
+
+    .skills-logo{
+        width:50px;
+    }
+
+    .blob-style{
+        width:180px;
+    }
+
+    .skill-heading{
+        font-size:32px;
+    }
+
+    .caps{
+        font-size:55px;
+    }
+}
