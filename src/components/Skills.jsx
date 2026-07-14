@@ -21,29 +21,34 @@ const Skills = () => {
 
         <div className="skill-subHeading">
 
-          <p>
-            Hi! I'm <strong>Arshnoor Singh</strong>, a Full Stack MERN Developer
-            and Computer Science undergraduate at <strong>Thapar Institute of
-            Engineering & Technology</strong>. I enjoy building scalable,
-            responsive, and user-friendly web applications.
-          </p>
+        <p>
+          I'm <strong>Arshnoor Singh</strong>, a Computer Science undergraduate at
+          <strong> Thapar Institute of Engineering and Technology</strong> with a
+          strong interest in full-stack web development and modern software engineering.
+        </p>
 
-          <p>
-            My core tech stack includes <strong>React.js</strong>,
-            <strong> Node.js</strong>, <strong>Express.js</strong>,
-            <strong> MongoDB</strong>, and <strong>Redux Toolkit</strong>.
-            I also have hands-on experience with REST APIs, JWT Authentication,
-            Razorpay, Cloudinary, Git/GitHub, and modern MVC architecture.
-          </p>
+        <p>
+          My primary stack includes <strong>React.js</strong>,
+          <strong> Node.js</strong>, <strong>Express.js</strong>,
+          <strong> MongoDB</strong>, and <strong>Redux Toolkit</strong>. I build
+          responsive web applications, RESTful APIs, and secure authentication
+          systems using technologies such as JWT, Cloudinary, and Razorpay.
+        </p>
 
-          <p>
-            Beyond full-stack development, I actively practice
-            <strong> Data Structures & Algorithms</strong> and enjoy solving
-            real-world problems while continuously learning modern web
-            technologies and best development practices.
-          </p>
+        <p>
+          Alongside development, I actively practice
+          <strong> Data Structures & Algorithms</strong> and enjoy solving
+          challenging problems while continuously exploring scalable backend
+          architectures and modern development practices.
+        </p>
 
-        </div>
+        <p>
+          I'm currently looking for opportunities where I can contribute,
+          collaborate with experienced engineers, and grow as a Full Stack
+          Software Developer.
+        </p>
+
+      </div>
 
       </div>
 
