@@ -22,10 +22,15 @@ body{
 }
 
 #wrapper{
+    padding-top:100px;
     width:100%;
     min-height:100vh;
     overflow-x:hidden;
     overflow-y:auto;
+}
+
+section{
+    scroll-margin-top:110px;
 }
 
 .container{
