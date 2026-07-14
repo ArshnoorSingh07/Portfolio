@@ -1,13 +1,57 @@
 .navbar{
+
+    position:fixed;
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:min(1200px,95%);
+
+    height:72px;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
-    padding-top:1rem;
-    position:relative;
+
+    padding:0 2rem;
+
+    border-radius:18px;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+}
+
+.navbar.scrolled{
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(24px);
+
+    -webkit-backdrop-filter:blur(24px);
+
+    box-shadow:0 12px 40px rgba(0,0,0,.15);
+
 }
 
 .logo{
-    width:80px;
+    width:62px;
 }
 
 .logo-container{
@@ -16,8 +60,8 @@
 }
 
 .logo-text{
-    margin-left:-1.2rem;
-    font-size:28px;
+    margin-left:-0.8rem;
+    font-size:24px;
 }
 
 .nav-right{
@@ -27,13 +71,19 @@
 }
 
 .nav-items{
+
     display:flex;
-    gap:2rem;
+
+    gap:1.8rem;
+
 }
 
 .nav-items div{
-    font-size:20px;
+
+    font-size:17px;
+
     font-weight:500;
+
 }
 
 .nav-items a{
@@ -47,13 +97,19 @@
 }
 
 .nav-icons{
+
     display:flex;
-    gap:1.2rem;
+
+    gap:1rem;
+
 }
 
 .nav-icons a{
-    font-size:1.5rem;
+
+    font-size:1.35rem;
+
     transition:.3s;
+
 }
 
 .nav-icons a:nth-child(1){
@@ -83,6 +139,32 @@
 /* ===================== */
 
 @media(max-width:900px){
+
+@media (max-width:992px){
+
+.navbar{
+
+    width:95%;
+
+    height:65px;
+
+    padding:0 1.5rem;
+
+}
+
+.logo{
+
+    width:55px;
+
+}
+
+.logo-text{
+
+    font-size:20px;
+
+}
+
+}
 
 .hamburger{
     display:block;
@@ -134,6 +216,36 @@
 .nav-icons{
 
     margin-top:1rem;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.navbar{
+
+    top:10px;
+
+    width:95%;
+
+    height:60px;
+
+    border-radius:15px;
+
+    padding:0 1rem;
+
+}
+
+.logo{
+
+    width:50px;
+
+}
+
+.logo-text{
+
+    font-size:18px;
 
 }
 
