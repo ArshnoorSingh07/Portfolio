@@ -5,7 +5,7 @@ import blobVector from "../assets/images/userAsset/blob vector.png";
 
 const Skills = () => {
   return (
-    <div id="skills" className="container skills-container">
+    <section id="skills" className="container skills-container">
 
       <div className="skill-fade-text">
         Skills
@@ -66,7 +66,7 @@ const Skills = () => {
 
       </div>
 
-    </div>
+    </section>
   );
 };
 
